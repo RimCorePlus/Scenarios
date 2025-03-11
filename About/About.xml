@@ -1,0 +1,23 @@
+﻿<ModMetaData>
+	<packageId>coreplus.scenarios</packageId>
+	<name>[Core+] Scenarios</name>
+	<author>boomer</author>
+	<description />
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modVersion>1.5</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True" />
+	<url>https://github.com/RimCorePlus/Scenarios</url>
+	<modDependencies />
+	<loadBefore />
+	<loadAfter>
+		<li>coreplus.rebalance</li>
+		<li>dubwise.dubsbadhygiene</li>
+		<li>coreplus.industry.lumber</li>
+		<li>coreplus.industry.textiles</li>
+		<li>ceteam.combatextended</li>
+		<li>coreplus.industry.metal</li>
+	</loadAfter>
+	<incompatibleWith />
+</ModMetaData>

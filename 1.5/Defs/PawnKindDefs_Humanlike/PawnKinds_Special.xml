@@ -1,0 +1,59 @@
+<Defs>
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>CorePlus_StrangerInBlack</defName>
+        <label>stranger in black</label>
+        <labelMale>man in black</labelMale>
+        <labelFemale>woman in black</labelFemale>
+        <labelPlural>strangers in black</labelPlural>
+        <race>Human</race>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <combatPower>55</combatPower>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <isFighter>true</isFighter>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                    <li>Outlander</li>
+                    <li>Outsider</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>500~500</weaponMoney>
+        <weaponTags>
+            <li>Revolver</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_CollarShirt</li>
+            <li>Apparel_Pants</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_CowboyHat</li>
+        </apparelRequired>
+        <apparelColor>(58,58,58)</apparelColor>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <favoriteColor>(58,58,58)</favoriteColor>
+        <initialWillRange>0~0</initialWillRange>
+        <initialResistanceRange>0~2</initialResistanceRange>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+</Defs>

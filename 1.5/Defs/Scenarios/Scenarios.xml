@@ -1,0 +1,78 @@
+<Defs>
+    <ScenarioDef>
+        <defName>CorePlus_StrangerInBlackScenario</defName>
+        <label>The Stranger's Gambit</label>
+        <description>You were once a wandering enigma, appearing in times of crisis to aid those in need. But charity only goes so far. The world is broken, and you've decided to fix it on your own terms. Armed with nothing but your wits, a revolver, and the will to forge a new faction from the ashes, you set out to carve order from the chaos. Will your legend endure, or will you be just another lost soul in this world's unforgiving wilds?\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</description>
+        <scenario>
+            <summary>A lone gunslinger set out to build a lasting legacy in the untamed Rim.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!--game start dialog-->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>You were once a wandering enigma, appearing in times of crisis to aid those in need. But charity only goes so far. The world is broken, and you've decided to fix it on your own terms. Armed with nothing but your wits, a revolver, and the will to forge a new faction from the ashes, you set out to carve order from the chaos.\n\nWill your legend endure, or will you be just another lost soul in this world's unforgiving wilds?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+                <!--config pages-->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>1</pawnChoiceCount>
+                    <leftBehindPawnKind>CorePlus_StrangerInBlack</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>CorePlus_StrangerInBlack</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+
+                <!--player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+
+                <!--starting research-->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Gunsmithing</project>
+                </li>
+
+                <!--player starting things-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>500</count>
+                </li>
+
+                <!--map structure-->
+                <li Class="KCSG.ScenPart_AddStartingStructure">
+                    <def>VFEC_AddStartingStructure</def>
+                    <spawnConduits>True</spawnConduits>
+                    <preGenClear>True</preGenClear>
+                    <structureLabel>A small survival compound</structureLabel>
+                    <nearMapCenter>True</nearMapCenter>
+                    <chooseFrom>
+                        <li>CorePlus_StrangerCompound</li>
+                    </chooseFrom>
+                </li>
+
+                <!--misc config-->
+                <li Class="ScenPart_DisableMapGen">
+                    <def>DisableExostriderRemains</def>
+                </li>
+                <li Class="ScenPart_NoPossessions">
+                    <def>NoPossessions</def>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
