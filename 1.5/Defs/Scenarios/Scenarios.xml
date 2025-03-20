@@ -29,6 +29,11 @@
                             <count>1</count>
                             <requiredAtStart>true</requiredAtStart>
                         </li>
+                        <li>
+                            <kindDef>CorePlus_HighmateRefugee</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
                     </kindCounts>
                 </li>
 
@@ -46,30 +51,58 @@
                 </li>
 
                 <!--player starting things-->
+                <li Class="ScenPart_NoPossessions">
+                    <def>NoPossessions</def>
+                </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
-                    <count>500</count>
+                    <count>1000</count>
                 </li>
-
-                <!--map structure-->
-                <li Class="KCSG.ScenPart_AddStartingStructure">
-                    <def>VFEC_AddStartingStructure</def>
-                    <spawnConduits>True</spawnConduits>
-                    <preGenClear>True</preGenClear>
-                    <structureLabel>A small survival compound</structureLabel>
-                    <nearMapCenter>True</nearMapCenter>
-                    <chooseFrom>
-                        <li>CorePlus_StrangerCompound</li>
-                    </chooseFrom>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>25</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_44Magnum_FMJ</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_44Magnum_AP</thingDef>
+                    <count>60</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>600</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>50</count>
                 </li>
 
                 <!--misc config-->
                 <li Class="ScenPart_DisableMapGen">
                     <def>DisableExostriderRemains</def>
-                </li>
-                <li Class="ScenPart_NoPossessions">
-                    <def>NoPossessions</def>
                 </li>
 
             </parts>
