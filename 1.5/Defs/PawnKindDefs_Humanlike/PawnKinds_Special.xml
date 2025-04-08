@@ -11,7 +11,7 @@
     </PawnKindDef>
     <!--stranger in black-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_StrangerInBlack</defName>
+        <defName>CorePlus_MechanitorInBlack</defName>
         <label>stranger in black</label>
         <labelMale>man in black</labelMale>
         <labelFemale>woman in black</labelFemale>
@@ -34,6 +34,7 @@
         <requiredWorkTags>
             <li>Violent</li>
             <li>Caring</li>
+            <li>Intellectual</li>
         </requiredWorkTags>
         <gearHealthRange>1~1</gearHealthRange>
         <itemQuality>Excellent</itemQuality>
@@ -43,6 +44,10 @@
         <weaponTags>
             <li>Revolver</li>
         </weaponTags>
+        <techHediffsRequired>
+            <li>Mechlink</li>
+        </techHediffsRequired>
+        <biocodeWeaponChance>1</biocodeWeaponChance>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -67,6 +72,13 @@
                 <range>8~16</range>
             </li>
         </skills>
+        <disallowedTraits>
+            <li>BodyPurist</li>
+        </disallowedTraits>
+        <disallowedTraitsWithDegree>
+            <PsychicSensitivity>-1</PsychicSensitivity>
+            <PsychicSensitivity>-2</PsychicSensitivity>
+        </disallowedTraitsWithDegree>
     </PawnKindDef>
     <!--highmate-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">

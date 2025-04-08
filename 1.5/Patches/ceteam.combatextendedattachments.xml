@@ -1,0 +1,21 @@
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[defName="CE_Gun_LeMatRevolver"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>//ThingDef[defName="CE_Gun_LeMatRevolver"]/weaponTags</xpath>
+                    <value>
+                        <li>CE_Gun_LeMatRevolver</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>//PawnKindDef[defName="CorePlus_MechanitorInBlack"]/weaponTags/li[text()="Revolver"]</xpath>
+                    <value>
+                        <li>CE_Gun_LeMatRevolver</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

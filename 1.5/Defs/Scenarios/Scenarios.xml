@@ -1,8 +1,8 @@
 <Defs>
     <ScenarioDef>
-        <defName>CorePlus_StrangerInBlackScenario</defName>
+        <defName>CorePlus_MechanitorInBlackScenario</defName>
         <label>The Stranger's Gambit</label>
-        <description>You were once a wandering enigma, appearing in times of crisis to aid those in need. But charity only goes so far. The world is broken, and you've decided to fix it on your own terms. Armed with nothing but your wits, a revolver, and the will to forge a new faction from the ashes, you set out to carve order from the chaos. Will your legend endure, or will you be just another lost soul in this world's unforgiving wilds?\n\nNote: Since your starting character will lack some skills, this is an especially difficult scenario in the early game.</description>
+        <description>Cleaning up after others gets old. You were tired of pulling people out of their messes and patching up their mistakes. When you salvaged a mechlink from an old, abandoned complex, it felt like fate. It took some careful planning and even more preparation, but you're finally ready to build something that doesn't need saving.\n\nNote: Your starting character will be armed with a revolver.</description>
         <scenario>
             <summary>A lone gunslinger set out to build a lasting legacy in the untamed Rim.</summary>
             <playerFaction>
@@ -10,59 +10,58 @@
                 <factionDef>PlayerColony</factionDef>
             </playerFaction>
             <parts>
-
-                <!--game start dialog-->
-                <li Class="ScenPart_GameStartDialog">
-                    <def>GameStartDialog</def>
-                    <text>You were once a wandering enigma, appearing in times of crisis to aid those in need. But charity only goes so far. The world is broken, and you've decided to fix it on your own terms. Armed with nothing but your wits, a revolver, and the will to forge a new faction from the ashes, you set out to carve order from the chaos.\n\nWill your legend endure, or will you be just another lost soul in this world's unforgiving wilds?</text>
-                    <closeSound>GameStartSting</closeSound>
-                </li>
-
                 <!--config pages-->
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>1</pawnChoiceCount>
-                    <leftBehindPawnKind>CorePlus_StrangerInBlack</leftBehindPawnKind>
+                    <leftBehindPawnKind>CorePlus_MechanitorInBlack</leftBehindPawnKind>
                     <kindCounts>
                         <li>
-                            <kindDef>CorePlus_StrangerInBlack</kindDef>
-                            <count>1</count>
-                            <requiredAtStart>true</requiredAtStart>
-                        </li>
-                        <li>
-                            <kindDef>CorePlus_HighmateRefugee</kindDef>
+                            <kindDef>CorePlus_MechanitorInBlack</kindDef>
                             <count>1</count>
                             <requiredAtStart>true</requiredAtStart>
                         </li>
                     </kindCounts>
                 </li>
-
-                <!--player starting stuff spawn method-->
+                <!-- Player starting stuff spawn method-->
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
                     <def>PlayerPawnsArriveMethod</def>
                     <visible>false</visible>
                     <method>DropPods</method>
                 </li>
-
-                <!--starting research-->
+                <!-- Starting research -->
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
                     <project>Gunsmithing</project>
                 </li>
-
-                <!--player starting things-->
-                <li Class="ScenPart_NoPossessions">
-                    <def>NoPossessions</def>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>MicroelectronicsBasics</project>
                 </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>BasicMechtech</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Batteries</project>
+                </li>
+                <!-- Starting mechs -->
+                <li Class="ScenPart_StartingMech">
+                    <def>StartingMech</def>
+                    <mechKind>Mech_Lifter</mechKind>
+                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                </li>
+                <li Class="ScenPart_StartingMech">
+                    <def>StartingMech</def>
+                    <mechKind>Mech_Constructoid</mechKind>
+                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                </li>
+                <!-- Player starting things -->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
                     <count>1000</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Gold</thingDef>
-                    <count>50</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -72,39 +71,46 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MedicineIndustrial</thingDef>
-                    <count>25</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_44Magnum_FMJ</thingDef>
-                    <count>150</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_44Magnum_AP</thingDef>
-                    <count>60</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Steel</thingDef>
-                    <count>600</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>WoodLog</thingDef>
-                    <count>450</count>
+                    <count>10</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>ComponentIndustrial</thingDef>
-                    <count>50</count>
+                    <count>55</count>
                 </li>
-
-                <!--misc config-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>900</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>SubcoreBasic</thingDef>
+                    <count>5</count>
+                </li>
                 <li Class="ScenPart_DisableMapGen">
                     <def>DisableExostriderRemains</def>
                 </li>
-
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_44Magnum_FMJ</thingDef>
+                    <count>180</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_44Magnum_AP</thingDef>
+                    <count>45</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextendedattachments">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Ammo_20Gauge_Buck</thingDef>
+                    <count>25</count>
+                </li>
             </parts>
         </scenario>
     </ScenarioDef>
