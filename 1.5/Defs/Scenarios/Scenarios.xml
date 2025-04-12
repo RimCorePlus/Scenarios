@@ -98,18 +98,13 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_44Magnum_FMJ</thingDef>
-                    <count>180</count>
+                    <thingDef>Bullet_44Magnum_FMJ</thingDef>
+                    <count>150</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextended">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_44Magnum_AP</thingDef>
-                    <count>45</count>
-                </li>
-                <li Class="ScenPart_StartingThing_Defined" MayRequire="ceteam.combatextendedattachments">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>Ammo_20Gauge_Buck</thingDef>
-                    <count>25</count>
+                    <thingDef>Bullet_44Magnum_AP</thingDef>
+                    <count>50</count>
                 </li>
             </parts>
         </scenario>

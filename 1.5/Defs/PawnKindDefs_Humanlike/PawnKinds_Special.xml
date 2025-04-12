@@ -12,10 +12,8 @@
     <!--stranger in black-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
         <defName>CorePlus_MechanitorInBlack</defName>
-        <label>stranger in black</label>
-        <labelMale>man in black</labelMale>
-        <labelFemale>woman in black</labelFemale>
-        <labelPlural>strangers in black</labelPlural>
+        <label>mechanitor in black</label>
+        <labelPlural>mechanitors in black</labelPlural>
         <defaultFactionType>PlayerColony</defaultFactionType>
         <combatPower>55</combatPower>
         <minGenerationAge>25</minGenerationAge>
