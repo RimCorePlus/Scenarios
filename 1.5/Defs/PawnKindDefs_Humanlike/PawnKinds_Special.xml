@@ -7,16 +7,16 @@
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
         <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
         <initialWillRange>0~0</initialWillRange>
-        <humanPregnancyChance>0.06</humanPregnancyChance>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <defaultFactionType>PlayerColony</defaultFactionType>
     </PawnKindDef>
-    <!--stranger in black-->
+    <!--mechanitor in black-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
         <defName>CorePlus_MechanitorInBlack</defName>
         <label>mechanitor in black</label>
         <labelPlural>mechanitors in black</labelPlural>
-        <defaultFactionType>PlayerColony</defaultFactionType>
         <combatPower>55</combatPower>
-        <minGenerationAge>25</minGenerationAge>
+        <minGenerationAge>20</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
@@ -63,7 +63,6 @@
         <favoriteColor>(58,58,58)</favoriteColor>
         <initialWillRange>0~0</initialWillRange>
         <initialResistanceRange>0~2</initialResistanceRange>
-        <humanPregnancyChance>0</humanPregnancyChance>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -78,20 +77,20 @@
             <PsychicSensitivity>-2</PsychicSensitivity>
         </disallowedTraitsWithDegree>
     </PawnKindDef>
-    <!--highmate-->
+    <!--highmate refugee-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
         <defName>CorePlus_HighmateRefugee</defName>
         <label>highmate refugee</label>
-        <minGenerationAge>20</minGenerationAge>
-        <maxGenerationAge>25</maxGenerationAge>
+        <minGenerationAge>16</minGenerationAge>
+        <maxGenerationAge>22</maxGenerationAge>
         <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
         <requiredWorkTags>
             <li>Social</li>
         </requiredWorkTags>
         <gearHealthRange>1~1</gearHealthRange>
-        <itemQuality>Excellent</itemQuality>
-        <minApparelQuality>Excellent</minApparelQuality>
-        <forceWeaponQuality>Excellent</forceWeaponQuality>
+        <itemQuality>Normal</itemQuality>
+        <minApparelQuality>Normal</minApparelQuality>
+        <forceWeaponQuality>Normal</forceWeaponQuality>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -115,12 +114,60 @@
             </xenotypeChances>
         </xenotypeSet>
         <initialResistanceRange>0~2</initialResistanceRange>
-        <humanPregnancyChance>0</humanPregnancyChance>
         <skills>
             <li>
                 <skill>Social</skill>
                 <range>8~16</range>
             </li>
         </skills>
+        <fixedGender>Female</fixedGender>
+        <disallowedTraits>
+            <li>Gay</li>
+        </disallowedTraits>
+    </PawnKindDef>
+    <!--mercenary sniper-->
+    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
+        <defName>CorePlus_MercSniper</defName>
+        <label>sniper</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>40</maxGenerationAge>
+        <combatPower>110</combatPower>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Normal</itemQuality>
+        <minApparelQuality>Normal</minApparelQuality>
+        <forceWeaponQuality>Normal</forceWeaponQuality>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelColor>(55,55,55)</apparelColor>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <weaponMoney>600~600</weaponMoney>
+        <weaponTags>
+            <li>SniperRifle</li>
+        </weaponTags>
+        <initialResistanceRange>13~20</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~16</range>
+            </li>
+        </skills>
+        <fixedGender>Male</fixedGender>
+        <disallowedTraits>
+            <li>Gay</li>
+        </disallowedTraits>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>700~1200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <biocodeWeaponChance>1</biocodeWeaponChance>
     </PawnKindDef>
 </Defs>

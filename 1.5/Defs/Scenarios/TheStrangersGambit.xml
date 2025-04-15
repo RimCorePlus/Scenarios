@@ -1,0 +1,93 @@
+<Defs>
+    <ScenarioDef MayRequire="Ludeon.Rimworld.Biotech">
+        <defName>CorePlus_TheStrangersGambitScenario</defName>
+        <label>The Stranger's Gambit</label>
+        <description>It pays well to aim well. You were the key to the settlement's defense, eliminating targets before they could reach the wall. So when the mayor sent you off to babysit a highmate, you knew everyone's pockets were being lined.\n\nNote: Your starting pawn will be armed with a sniper rifle. The shattered empire will be permanently hostile towards you.</description>
+        <scenario>
+            <summary>One seasoned sniper and a highmate.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+                <!--config pages-->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>2</pawnChoiceCount>
+                    <leftBehindPawnKind>Colonist</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>CorePlus_MercSniper</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>CorePlus_HighmateRefugee</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+                <!-- Starting research -->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Gunsmithing</project>
+                </li>
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>2500</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <!-- Faction relations -->
+                <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="Ludeon.Rimworld.Royalty">
+                    <factionDef>Empire</factionDef>
+                    <alwaysHostile>True</alwaysHostile>
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                </li>
+                <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+                    <factionDef>OutlanderRough</factionDef>
+                    <affectStartingGoodwill>True</affectStartingGoodwill>
+                    <startingGoodwillRange>75~100</startingGoodwillRange>
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
