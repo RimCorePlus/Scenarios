@@ -160,6 +160,7 @@
         <fixedGender>Male</fixedGender>
         <disallowedTraits>
             <li>Gay</li>
+            <li>Brawler</li>
         </disallowedTraits>
         <techHediffsChance>0.15</techHediffsChance>
         <techHediffsMoney>700~1200</techHediffsMoney>
