@@ -41,6 +41,7 @@
         <weaponMoney>500~1000</weaponMoney>
         <weaponTags>
             <li>Revolver</li>
+            <li IfModActive="harkon.other.coltanaconda">HRK_Colt_Anaconda_M</li>
         </weaponTags>
         <techHediffsRequired>
             <li>Mechlink</li>
