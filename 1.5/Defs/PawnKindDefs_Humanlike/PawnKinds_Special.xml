@@ -9,6 +9,7 @@
         <initialWillRange>0~0</initialWillRange>
         <humanPregnancyChance>0</humanPregnancyChance>
         <defaultFactionType>PlayerColony</defaultFactionType>
+        <biocodeWeaponChance>1</biocodeWeaponChance>
     </PawnKindDef>
     <!--mechanitor in black-->
     <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
@@ -46,7 +47,6 @@
         <techHediffsRequired>
             <li>Mechlink</li>
         </techHediffsRequired>
-        <biocodeWeaponChance>1</biocodeWeaponChance>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -57,7 +57,6 @@
             <li>Apparel_Duster</li>
             <li>Apparel_FlakVest</li>
             <li>Apparel_CowboyHat</li>
-            <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Boots</li>
         </apparelRequired>
         <apparelColor>(58,58,58)</apparelColor>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
@@ -170,6 +169,5 @@
             <li>Advanced</li>
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
-        <biocodeWeaponChance>1</biocodeWeaponChance>
     </PawnKindDef>
 </Defs>

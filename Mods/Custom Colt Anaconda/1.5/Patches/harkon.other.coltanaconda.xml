@@ -10,12 +10,6 @@
             <li Class="PatchOperationRemove">
                 <xpath>//PawnKindDef[defName="CorePlus_MechanitorInBlack"]/weaponTags/li[text()="Revolver"]</xpath>
             </li>
-            <li Class="PatchOperationReplace">
-                <xpath>//PawnKindDef[defName="CorePlus_MechanitorInBlack"]/weaponMoney</xpath>
-                <value>
-                    <weaponMoney>550~1000</weaponMoney>
-                </value>
-            </li>
         </operations>
     </Operation>
 </Patch>

@@ -2,6 +2,7 @@
     <v1.5>
         <li>/</li>
         <li>1.5</li>
+        <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="harkon.other.coltanaconda">Mods/Custom Colt Anaconda/1.5</li>
     </v1.5>
 </loadFolders>
