@@ -4,7 +4,7 @@
         <label>The Mechanitor (in black)</label>
         <description>Cleaning up after others gets old. You were tired of pulling people out of their messes and patching up their mistakes. When you salvaged a mechlink from an old, abandoned complex, it felt like fate. It took some careful planning and even more preparation, but you're finally ready to build something that doesn't need saving.\n\nNote: This scenario is identical to "The Mechanitor" from Biotech, starring a stranger in black pawn with a revolver instead of the default mechanitor pawn.</description>
         <scenario>
-            <summary>A lone gunslinger set out to build a lasting legacy in the untamed Rim.</summary>
+            <summary>A lone gunslinger set out to build a lasting legacy in the Rim.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerColony</factionDef>

@@ -42,7 +42,6 @@
         <weaponMoney>500~1000</weaponMoney>
         <weaponTags>
             <li>Revolver</li>
-            <li IfModActive="harkon.other.coltanaconda">HRK_Colt_Anaconda_M</li>
         </weaponTags>
         <techHediffsRequired>
             <li>Mechlink</li>
@@ -99,7 +98,6 @@
             <li>Apparel_CollarShirt</li>
             <li>Apparel_Pants</li>
             <li>Apparel_Jacket</li>
-            <li MayRequire="vanillaexpanded.vappe">VAE_Footwear_Shoes</li>
         </apparelRequired>
         <apparelColor>(232,232,232)</apparelColor>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
