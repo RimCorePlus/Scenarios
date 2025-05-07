@@ -70,6 +70,7 @@
         </skills>
         <disallowedTraits>
             <li>BodyPurist</li>
+            <li>Brawler</li>
         </disallowedTraits>
         <disallowedTraitsWithDegree>
             <PsychicSensitivity>-1</PsychicSensitivity>
