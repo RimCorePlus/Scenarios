@@ -36,9 +36,9 @@
             <li>Intellectual</li>
         </requiredWorkTags>
         <gearHealthRange>1~1</gearHealthRange>
-        <itemQuality>Excellent</itemQuality>
-        <minApparelQuality>Excellent</minApparelQuality>
-        <forceWeaponQuality>Excellent</forceWeaponQuality>
+        <itemQuality>Good</itemQuality>
+        <minApparelQuality>Good</minApparelQuality>
+        <forceWeaponQuality>Good</forceWeaponQuality>
         <weaponMoney>500~1000</weaponMoney>
         <weaponTags>
             <li>Revolver</li>
@@ -76,97 +76,5 @@
             <PsychicSensitivity>-1</PsychicSensitivity>
             <PsychicSensitivity>-2</PsychicSensitivity>
         </disallowedTraitsWithDegree>
-    </PawnKindDef>
-    <!--highmate refugee-->
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_HighmateRefugee</defName>
-        <label>highmate refugee</label>
-        <minGenerationAge>16</minGenerationAge>
-        <maxGenerationAge>22</maxGenerationAge>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <requiredWorkTags>
-            <li>Social</li>
-        </requiredWorkTags>
-        <gearHealthRange>1~1</gearHealthRange>
-        <itemQuality>Normal</itemQuality>
-        <minApparelQuality>Normal</minApparelQuality>
-        <forceWeaponQuality>Normal</forceWeaponQuality>
-        <apparelTags>
-            <li>IndustrialBasic</li>
-            <li>IndustrialAdvanced</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>Apparel_CollarShirt</li>
-            <li>Apparel_Pants</li>
-            <li>Apparel_Jacket</li>
-        </apparelRequired>
-        <apparelColor>(232,232,232)</apparelColor>
-        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <techHediffsTags>
-            <li>Advanced</li>
-        </techHediffsTags>
-        <techHediffsChance>0.04</techHediffsChance>
-        <xenotypeSet>
-            <xenotypeChances>
-                <Highmate MayRequire="Ludeon.RimWorld.Biotech">999</Highmate>
-            </xenotypeChances>
-        </xenotypeSet>
-        <initialResistanceRange>0~2</initialResistanceRange>
-        <skills>
-            <li>
-                <skill>Social</skill>
-                <range>8~16</range>
-            </li>
-        </skills>
-        <fixedGender>Female</fixedGender>
-        <disallowedTraits>
-            <li>Gay</li>
-        </disallowedTraits>
-    </PawnKindDef>
-    <!--mercenary sniper-->
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_MercSniper</defName>
-        <label>sniper</label>
-        <defaultFactionType>PlayerColony</defaultFactionType>
-        <minGenerationAge>25</minGenerationAge>
-        <maxGenerationAge>40</maxGenerationAge>
-        <combatPower>110</combatPower>
-        <gearHealthRange>1~1</gearHealthRange>
-        <itemQuality>Normal</itemQuality>
-        <minApparelQuality>Normal</minApparelQuality>
-        <forceWeaponQuality>Normal</forceWeaponQuality>
-        <apparelTags>
-            <li>IndustrialBasic</li>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryBasic</li>
-            <li>IndustrialMilitaryAdvanced</li>
-        </apparelTags>
-        <apparelMoney>1000~1500</apparelMoney>
-        <apparelColor>(55,55,55)</apparelColor>
-        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-        <weaponMoney>600~600</weaponMoney>
-        <weaponTags>
-            <li>SniperRifle</li>
-        </weaponTags>
-        <initialResistanceRange>13~20</initialResistanceRange>
-        <skills>
-            <li>
-                <skill>Shooting</skill>
-                <range>8~16</range>
-            </li>
-        </skills>
-        <fixedGender>Male</fixedGender>
-        <disallowedTraits>
-            <li>Gay</li>
-            <li>Brawler</li>
-        </disallowedTraits>
-        <techHediffsChance>0.15</techHediffsChance>
-        <techHediffsMoney>700~1200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
     </PawnKindDef>
 </Defs>
