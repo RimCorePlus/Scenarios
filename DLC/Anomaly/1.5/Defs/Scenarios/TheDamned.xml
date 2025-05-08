@@ -1,0 +1,169 @@
+<Defs>
+    <ScenarioDef MayRequire="Ludeon.Rimworld.Biotech">
+        <!--ConfigurePawnsKindDefs requires Biotech-->
+        <defName>CorePlus_Expedition</defName>
+        <label>The Damned</label>
+        <description>Your team set out to investigate an ancient archotech monolith on a distant planet. As you survey the structure from orbit, the scanner's audio feed forms garbled syllables which repeat your own name over and over. Moments later, a blinding beam of energy reaches up from the planet and tears your research vessel apart.\n\nYou have disturbed something ancient and inhuman.\n\nNote: This is a rebalanced version of "The Anomaly" with a dedicated combat pawn and a dedicated researcher. The mercenary will have a gun equipped on arrival.</description>
+        <scenario>
+            <summary>One researcher and a mercenary investigate an ancient monolith.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>ResearchExpedition</factionDef>
+            </playerFaction>
+            <parts>
+                <!--Starting pawns-->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>6</pawnChoiceCount>
+                    <leftBehindPawnKind>CorePlus_DamnedResearcher</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>CorePlus_PlayerMercenary</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                        <li>
+                            <kindDef>CorePlus_DamnedResearcher</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+                <!--Arrival method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                </li>
+                <!--Starting research-->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>SecurityDoor</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Batteries</project>
+                </li>
+                <!--Forced hediffs-->
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <chance>0.04</chance>
+                    <context>PlayerStarter</context>
+                    <hediff>Tentacle</hediff>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <chance>0.04</chance>
+                    <context>PlayerStarter</context>
+                    <hediff>FleshWhip</hediff>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <chance>0.04</chance>
+                    <context>PlayerStarter</context>
+                    <hediff>FleshmassLung</hediff>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <chance>0.04</chance>
+                    <context>PlayerStarter</context>
+                    <hediff>FleshmassStomach</hediff>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <!--Starting things-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>25</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>HoldingPlatform</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ProximityDetector</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>TextBook</thingDef>
+                    <count>2</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Tome</thingDef>
+                    <quality>Good</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Shard</thingDef>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Bioferrite</thingDef>
+                    <count>100</count>
+                    <allowRoofed>true</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                    <allowRoofed>true</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>600</count>
+                    <allowRoofed>true</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>75</count>
+                    <allowRoofed>true</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>300</count>
+                    <allowRoofed>true</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <count>3</count>
+                </li>
+                <!--Game conditions-->
+                <li Class="ScenPart_CreateIncident">
+                    <def>CreateIncident</def>
+                    <visible>false</visible>
+                    <incident>RefugeePodCrash_Ghoul</incident>
+                    <minDays>12</minDays>
+                    <maxDays>15</maxDays>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

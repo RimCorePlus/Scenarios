@@ -1,0 +1,8 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ThingDef[defName="Apparel_GasMask"]/apparel/tags</xpath>
+        <value>
+            <li>CorePlus_GasMaskExclusion</li>
+        </value>
+    </Operation>
+</Patch>

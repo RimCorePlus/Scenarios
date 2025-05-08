@@ -1,0 +1,99 @@
+<Defs>
+    <ScenarioDef>
+        <defName>CorePlus_MechanitorInBlackScenario</defName>
+        <label>The Mechanitor (in black)</label>
+        <description>Cleaning up after others gets old. You were tired of pulling people out of their messes and patching up their mistakes. When you salvaged a mechlink from an old, abandoned complex, it felt like fate. It took some careful planning and even more preparation, but you're finally ready to build something that doesn't need saving.\n\nNote: This scenario is identical to "The Mechanitor" from Biotech, starring a stranger in black pawn with a revolver instead of the default mechanitor pawn.</description>
+        <scenario>
+            <summary>A lone gunslinger set out to build a lasting legacy in the Rim.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+                <!--Starting pawns-->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                    <def>ConfigurePawnsKindDefs</def>
+                    <pawnChoiceCount>1</pawnChoiceCount>
+                    <leftBehindPawnKind>CorePlus_MechanitorInBlack</leftBehindPawnKind>
+                    <kindCounts>
+                        <li>
+                            <kindDef>CorePlus_MechanitorInBlack</kindDef>
+                            <count>1</count>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                    </kindCounts>
+                </li>
+                <!--Starting mechs-->
+                <li Class="ScenPart_StartingMech">
+                    <def>StartingMech</def>
+                    <mechKind>Mech_Lifter</mechKind>
+                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                </li>
+                <li Class="ScenPart_StartingMech">
+                    <def>StartingMech</def>
+                    <mechKind>Mech_Constructoid</mechKind>
+                    <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+                </li>
+                <!--Arrival method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+                <!--Starting research-->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>MicroelectronicsBasics</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>BasicMechtech</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Batteries</project>
+                </li>
+                <!--Starting things-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>1000</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>10</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>55</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>900</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>SubcoreBasic</thingDef>
+                    <count>5</count>
+                </li>
+                <!--Game conditions-->
+                <li Class="ScenPart_DisableMapGen">
+                    <def>DisableExostriderRemains</def>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
