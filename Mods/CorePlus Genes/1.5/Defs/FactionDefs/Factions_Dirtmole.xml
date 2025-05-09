@@ -1,0 +1,36 @@
+<Defs>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>CorePlus_DirtmoleColony</defName>
+        <label>Mining Colony</label>
+        <description>A colony of off-worlder miners.</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>CorePlus_DirtmoleColonist</basicMemberKind>
+        <pawnSingular>miner</pawnSingular>
+        <pawnsPlural>miners</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+        <startingResearchTags>
+            <li>CorePlus_DirtmoleStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>CorePlus_DirtmoleStart</li>
+        </startingTechprintsResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>DevilstrandCloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+    </FactionDef>
+</Defs>

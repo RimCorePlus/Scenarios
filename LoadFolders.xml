@@ -4,5 +4,6 @@
         <li>Common</li>
         <li IfModActive="Ludeon.Rimworld.Anomaly">DLC/Anomaly/1.5</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">DLC/Biotech/1.5</li>
+        <li IfModActive="coreplus.genes">Mods/CorePlus Genes/1.5</li>
     </v1.5>
 </loadFolders>

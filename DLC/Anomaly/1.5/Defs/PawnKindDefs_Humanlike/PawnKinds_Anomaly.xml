@@ -4,12 +4,8 @@
         <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
         <chemicalAddictionChance>0.06</chemicalAddictionChance>
         <defaultFactionType Inherit="False">ResearchExpedition</defaultFactionType>
-        <initialResistanceRange>13~21</initialResistanceRange>
         <maxGenerationAge>50</maxGenerationAge>
         <minGenerationAge>20</minGenerationAge>
-        <techHediffsDisallowTags>
-            <li>PainCauser</li>
-        </techHediffsDisallowTags>
     </PawnKindDef>
     <!--mercenary gunner-->
     <PawnKindDef ParentName="CorePlus_ExpeditionPawnBase">
@@ -26,7 +22,7 @@
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
         </apparelTags>
-        <combatPower>85</combatPower>
+        <combatPower Inherit="False">85</combatPower>
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>

@@ -1,0 +1,105 @@
+<Defs>
+    <ScenarioDef MayRequire="Ludeon.Rimworld.Biotech">
+        <!--ConfigurePawnsKindDefs requires Biotech-->
+        <defName>CorePlus_MiningColony</defName>
+        <label>Dirtmole Mining Team</label>
+        <description>[placeholder], something about playing with mole people ideology preset</description>
+        <scenario>
+            <summary>Three dirtmole miners.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>CorePlus_DirtmoleColony</factionDef>
+            </playerFaction>
+            <parts>
+                <!--Starting pawns-->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigurePawnsXenotypes</def>
+                    <pawnChoiceCount>3</pawnChoiceCount>
+                    <xenotypeCounts>
+                        <li>
+                            <count>3</count>
+                            <requiredAtStart>True</requiredAtStart>
+                            <xenotype>Dirtmole</xenotype>
+                            <allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+                            <description>dirtmoles</description>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+                <!--Arrival method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                </li>
+                <!--Starting things-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>800</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_PumpShotgun</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Revolver</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Mace</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_SimpleHelmet</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                    <allowRoofed>True</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                    <allowRoofed>True</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                    <allowRoofed>True</allowRoofed>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                    <allowRoofed>True</allowRoofed>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

@@ -48,8 +48,6 @@
         <apparelColor>(58,58,58)</apparelColor>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
         <favoriteColor>(58,58,58)</favoriteColor>
-        <initialWillRange>0~0</initialWillRange>
-        <initialResistanceRange>0~2</initialResistanceRange>
         <skills>
             <li>
                 <skill>Shooting</skill>

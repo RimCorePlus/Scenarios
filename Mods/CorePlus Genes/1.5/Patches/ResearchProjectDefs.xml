@@ -1,0 +1,16 @@
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ResearchProjectDef[defName="ComplexClothing" or defName="ComplexFurniture" or defName="PassiveCooler" or defName="Stonecutting"]/tags</xpath>
+        <value>
+            <li>CorePlus_DirtmoleStart</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>//ResearchProjectDef[defName="Devilstrand" or defName="Smithing"]</xpath>
+        <value>
+            <tags>
+                <li>CorePlus_DirtmoleStart</li>
+            </tags>
+        </value>
+    </Operation>
+</Patch>
