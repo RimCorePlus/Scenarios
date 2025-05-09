@@ -10,7 +10,7 @@
                 <factionDef>PlayerColony</factionDef>
             </playerFaction>
             <parts>
-                <!--Starting pawns-->
+                <!--starting pawns-->
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>1</pawnChoiceCount>
@@ -23,7 +23,7 @@
                         </li>
                     </kindCounts>
                 </li>
-                <!--Starting mechs-->
+                <!--starting mechs-->
                 <li Class="ScenPart_StartingMech">
                     <def>StartingMech</def>
                     <mechKind>Mech_Lifter</mechKind>
@@ -34,13 +34,13 @@
                     <mechKind>Mech_Constructoid</mechKind>
                     <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
                 </li>
-                <!--Arrival method-->
+                <!--arrival method-->
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
                     <def>PlayerPawnsArriveMethod</def>
                     <visible>false</visible>
                     <method>DropPods</method>
                 </li>
-                <!--Starting research-->
+                <!--starting research-->
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
                     <project>MicroelectronicsBasics</project>
@@ -53,7 +53,7 @@
                     <def>StartingResearch</def>
                     <project>Batteries</project>
                 </li>
-                <!--Starting things-->
+                <!--starting things-->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
@@ -89,7 +89,7 @@
                     <thingDef>SubcoreBasic</thingDef>
                     <count>5</count>
                 </li>
-                <!--Game conditions-->
+                <!--game conditions-->
                 <li Class="ScenPart_DisableMapGen">
                     <def>DisableExostriderRemains</def>
                 </li>

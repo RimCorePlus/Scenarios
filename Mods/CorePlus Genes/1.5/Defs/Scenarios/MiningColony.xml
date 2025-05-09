@@ -1,9 +1,8 @@
 <Defs>
-    <ScenarioDef MayRequire="Ludeon.Rimworld.Biotech">
-        <!--ConfigurePawnsKindDefs requires Biotech-->
+    <ScenarioDef>
         <defName>CorePlus_MiningColony</defName>
         <label>Dirtmole Mining Team</label>
-        <description>[placeholder], something about playing with mole people ideology preset</description>
+        <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.\n\nNote: This is nearly identical to the classic "Crashlanded" scenario, with adjustments to account for nearsighted starting pawns. This player faction is industrial, but does not start with electricity.</description>
         <scenario>
             <summary>Three dirtmole miners.</summary>
             <playerFaction>
@@ -11,26 +10,26 @@
                 <factionDef>CorePlus_DirtmoleColony</factionDef>
             </playerFaction>
             <parts>
-                <!--Starting pawns-->
+                <!--starting pawns-->
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
                     <def>ConfigurePawnsXenotypes</def>
                     <pawnChoiceCount>3</pawnChoiceCount>
                     <xenotypeCounts>
                         <li>
                             <count>3</count>
-                            <requiredAtStart>True</requiredAtStart>
+                            <requiredAtStart>true</requiredAtStart>
                             <xenotype>Dirtmole</xenotype>
                             <allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
                             <description>dirtmoles</description>
                         </li>
                     </xenotypeCounts>
                 </li>
-                <!--Arrival method-->
+                <!--arrival method-->
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
                     <def>PlayerPawnsArriveMethod</def>
                     <method>DropPods</method>
                 </li>
-                <!--Starting things-->
+                <!--starting things-->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
@@ -74,13 +73,13 @@
                     <def>ScatterThingsNearPlayerStart</def>
                     <thingDef>Steel</thingDef>
                     <count>450</count>
-                    <allowRoofed>True</allowRoofed>
+                    <allowRoofed>true</allowRoofed>
                 </li>
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>
                     <thingDef>WoodLog</thingDef>
                     <count>300</count>
-                    <allowRoofed>True</allowRoofed>
+                    <allowRoofed>true</allowRoofed>
                 </li>
                 <li Class="ScenPart_ScatterThingsAnywhere">
                     <def>ScatterThingsAnywhere</def>
@@ -91,13 +90,13 @@
                     <def>ScatterThingsAnywhere</def>
                     <thingDef>Steel</thingDef>
                     <count>720</count>
-                    <allowRoofed>True</allowRoofed>
+                    <allowRoofed>true</allowRoofed>
                 </li>
                 <li Class="ScenPart_ScatterThingsAnywhere">
                     <def>ScatterThingsAnywhere</def>
                     <thingDef>MealSurvivalPack</thingDef>
                     <count>7</count>
-                    <allowRoofed>True</allowRoofed>
+                    <allowRoofed>true</allowRoofed>
                 </li>
             </parts>
         </scenario>

@@ -11,7 +11,7 @@
                 <factionDef>ResearchExpedition</factionDef>
             </playerFaction>
             <parts>
-                <!--Starting pawns-->
+                <!--starting pawns-->
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>6</pawnChoiceCount>
@@ -29,12 +29,12 @@
                         </li>
                     </kindCounts>
                 </li>
-                <!--Arrival method-->
+                <!--arrival method-->
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
                     <def>PlayerPawnsArriveMethod</def>
                     <method>DropPods</method>
                 </li>
-                <!--Starting research-->
+                <!--starting research-->
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
                     <project>SecurityDoor</project>
@@ -43,7 +43,7 @@
                     <def>StartingResearch</def>
                     <project>Batteries</project>
                 </li>
-                <!--Forced hediffs-->
+                <!--forced hediffs-->
                 <li Class="ScenPart_ForcedHediff">
                     <def>ForcedHediff</def>
                     <visible>false</visible>
@@ -76,7 +76,7 @@
                     <hediff>FleshmassStomach</hediff>
                     <severityRange>1~1</severityRange>
                 </li>
-                <!--Starting things-->
+                <!--starting things-->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MealSurvivalPack</thingDef>
@@ -155,7 +155,7 @@
                     <thingDef>ShipChunk</thingDef>
                     <count>3</count>
                 </li>
-                <!--Game conditions-->
+                <!--game conditions-->
                 <li Class="ScenPart_CreateIncident">
                     <def>CreateIncident</def>
                     <visible>false</visible>
