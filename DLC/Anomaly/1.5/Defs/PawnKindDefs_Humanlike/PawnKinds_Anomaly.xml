@@ -1,5 +1,4 @@
 <Defs>
-    <!--parent-->
     <PawnKindDef Abstract="True" ParentName="CorePlus_BasePlayerPawnKind" Name="CorePlus_ExpeditionPawnBase">
         <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
         <chemicalAddictionChance>0.06</chemicalAddictionChance>
@@ -7,7 +6,6 @@
         <maxGenerationAge>50</maxGenerationAge>
         <minGenerationAge>20</minGenerationAge>
     </PawnKindDef>
-    <!--mercenary gunner-->
     <PawnKindDef ParentName="CorePlus_ExpeditionPawnBase">
         <defName>CorePlus_PlayerMercenary</defName>
         <label>mercenary</label>
@@ -44,7 +42,6 @@
             <li>IndustrialGunAdvanced</li>
         </weaponTags>
     </PawnKindDef>
-    <!--researcher-->
     <PawnKindDef ParentName="CorePlus_ExpeditionPawnBase">
         <defName>CorePlus_DamnedResearcher</defName>
         <label>researcher</label>
