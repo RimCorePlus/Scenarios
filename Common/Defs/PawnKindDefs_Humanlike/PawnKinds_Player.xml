@@ -14,4 +14,41 @@
             <li>PainCauser</li>
         </techHediffsDisallowTags>
     </PawnKindDef>
+    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
+        <defName>CorePlus_PlayerMercenary</defName>
+        <label>mercenary</label>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <apparelDisallowTags>
+            <li>CorePlus_GasMaskExclusion</li>
+        </apparelDisallowTags>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <combatPower Inherit="False">85</combatPower>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <minGenerationAge>20</minGenerationAge>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~15</range>
+            </li>
+        </skills>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>700~1200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <weaponMoney>355~650</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+    </PawnKindDef>
 </Defs>

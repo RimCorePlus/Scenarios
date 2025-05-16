@@ -1,5 +1,5 @@
 <Defs>
-    <ScenarioDef MayRequire="Ludeon.Rimworld.Biotech">
+    <ScenarioDef>
         <!--ConfigurePawnsKindDefs requires Biotech-->
         <defName>CorePlus_Expedition</defName>
         <label>The Damned</label>
