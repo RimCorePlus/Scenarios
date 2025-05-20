@@ -9,13 +9,20 @@
 	<modVersion />
 	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/RimCorePlus/Scenarios</url>
+	<descriptionsByVersion />
 	<modDependencies />
+	<modDependenciesByVersion />
 	<loadBefore />
+	<loadBeforeByVersion />
+	<forceLoadBefore />
 	<loadAfter>
 		<li>ceteam.combatextended</li>
 		<li>coreplus.genes.dirtmole</li>
-		<li>coreplus.rebalance</li>
+		<li>boomer.rebalance</li>
 		<li>dubwise.dubsbadhygiene</li>
 	</loadAfter>
+	<loadAfterByVersion />
+	<forceLoadAfter />
 	<incompatibleWith />
+	<incompatibleWithByVersion />
 </ModMetaData>
