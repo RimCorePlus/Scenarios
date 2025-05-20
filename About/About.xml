@@ -12,10 +12,10 @@
 	<modDependencies />
 	<loadBefore />
 	<loadAfter>
+		<li>ceteam.combatextended</li>
+		<li>coreplus.genes</li>
 		<li>coreplus.rebalance</li>
 		<li>dubwise.dubsbadhygiene</li>
-		<li>coreplus.industry</li>
-		<li>ceteam.combatextended</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
