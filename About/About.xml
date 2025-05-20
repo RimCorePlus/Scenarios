@@ -14,10 +14,8 @@
 	<loadAfter>
 		<li>coreplus.rebalance</li>
 		<li>dubwise.dubsbadhygiene</li>
-		<li>coreplus.industry.lumber</li>
-		<li>coreplus.industry.textiles</li>
+		<li>coreplus.industry</li>
 		<li>ceteam.combatextended</li>
-		<li>coreplus.industry.metal</li>
 	</loadAfter>
 	<incompatibleWith />
 </ModMetaData>
