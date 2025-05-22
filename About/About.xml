@@ -9,7 +9,6 @@
 	<loadAfter>
 		<li>ceteam.combatextended</li>
 		<li>coreplus.genes.dirtmole</li>
-		<li>boomer.rebalance</li>
 		<li>dubwise.dubsbadhygiene</li>
 	</loadAfter>
 </ModMetaData>
