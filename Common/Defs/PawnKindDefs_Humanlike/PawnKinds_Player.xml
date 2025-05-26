@@ -1,5 +1,5 @@
 <Defs>
-    <PawnKindDef Abstract="True" Name="CorePlus_BasePlayerPawnKind">
+    <PawnKindDef Abstract="True" Name="RCP_BasePlayerPawnKind">
         <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
         <biocodeWeaponChance>1</biocodeWeaponChance>
@@ -14,12 +14,12 @@
             <li>PainCauser</li>
         </techHediffsDisallowTags>
     </PawnKindDef>
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_PlayerMercenary</defName>
+    <PawnKindDef ParentName="RCP_BasePlayerPawnKind">
+        <defName>RCP_PlayerMercenary</defName>
         <label>mercenary</label>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelDisallowTags>
-            <li>CorePlus_GasMaskExclusion</li>
+            <li>RCP_GasMaskExclusion</li>
         </apparelDisallowTags>
         <apparelMoney>1000~1500</apparelMoney>
         <apparelTags>

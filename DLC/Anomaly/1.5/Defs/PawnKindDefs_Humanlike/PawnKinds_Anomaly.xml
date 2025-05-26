@@ -1,6 +1,6 @@
 <Defs>
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_DamnedResearcher</defName>
+    <PawnKindDef ParentName="RCP_BasePlayerPawnKind">
+        <defName>RCP_DamnedResearcher</defName>
         <label>researcher</label>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelColor>(250,250,250)</apparelColor>

@@ -1,6 +1,6 @@
 <Defs>
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_DirtmoleColonist</defName>
+    <PawnKindDef ParentName="RCP_BasePlayerPawnKind">
+        <defName>RCP_DirtmoleColonist</defName>
         <label>miner</label>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelColor>(101,88,67)</apparelColor>
@@ -10,7 +10,7 @@
         </apparelTags>
         <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
         <chemicalAddictionChance>0.06</chemicalAddictionChance>
-        <defaultFactionType>CorePlus_DirtmoleColony</defaultFactionType>
+        <defaultFactionType>RCP_DirtmoleColony</defaultFactionType>
         <techHediffsChance>0.03</techHediffsChance>
         <techHediffsMoney>50~800</techHediffsMoney>
         <techHediffsTags>

@@ -1,7 +1,7 @@
 <Defs>
     <ScenarioDef>
         <!--ConfigurePawnsKindDefs requires Biotech-->
-        <defName>CorePlus_Expedition</defName>
+        <defName>RCP_Expedition</defName>
         <label>The Damned</label>
         <description>Your team set out to investigate an ancient archotech monolith on a distant planet. As you survey the structure from orbit, the scanner's audio feed forms garbled syllables which repeat your own name over and over. Moments later, a blinding beam of energy reaches up from the planet and tears your research vessel apart.\n\nYou have disturbed something ancient and inhuman.\n\nNote: This is a rebalanced version of "The Anomaly" with a dedicated combat pawn and a dedicated researcher. The mercenary will have a gun equipped on arrival.</description>
         <scenario>
@@ -15,15 +15,15 @@
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>6</pawnChoiceCount>
-                    <leftBehindPawnKind>CorePlus_DamnedResearcher</leftBehindPawnKind>
+                    <leftBehindPawnKind>RCP_DamnedResearcher</leftBehindPawnKind>
                     <kindCounts>
                         <li>
-                            <kindDef>CorePlus_PlayerMercenary</kindDef>
+                            <kindDef>RCP_PlayerMercenary</kindDef>
                             <count>1</count>
                             <requiredAtStart>true</requiredAtStart>
                         </li>
                         <li>
-                            <kindDef>CorePlus_DamnedResearcher</kindDef>
+                            <kindDef>RCP_DamnedResearcher</kindDef>
                             <count>1</count>
                             <requiredAtStart>true</requiredAtStart>
                         </li>

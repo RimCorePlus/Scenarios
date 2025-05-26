@@ -1,7 +1,7 @@
 <Defs>
     <!--mechanitor in black-->
-    <PawnKindDef ParentName="CorePlus_BasePlayerPawnKind">
-        <defName>CorePlus_MechanitorInBlack</defName>
+    <PawnKindDef ParentName="RCP_BasePlayerPawnKind">
+        <defName>RCP_MechanitorInBlack</defName>
         <label>mechanitor in black</label>
         <labelPlural>mechanitors in black</labelPlural>
         <combatPower>55</combatPower>

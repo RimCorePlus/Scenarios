@@ -1,10 +1,10 @@
 <Defs>
     <FactionDef ParentName="PlayerFactionBase">
-        <defName>CorePlus_DirtmoleColony</defName>
+        <defName>RCP_DirtmoleColony</defName>
         <label>Mining Colony</label>
         <description>A colony of off-worlder miners.</description>
         <isPlayer>true</isPlayer>
-        <basicMemberKind>CorePlus_DirtmoleColonist</basicMemberKind>
+        <basicMemberKind>RCP_DirtmoleColonist</basicMemberKind>
         <pawnSingular>miner</pawnSingular>
         <pawnsPlural>miners</pawnsPlural>
         <techLevel>Industrial</techLevel>
@@ -22,10 +22,10 @@
         </backstoryFilters>
         <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
         <startingResearchTags>
-            <li>CorePlus_DirtmoleStart</li>
+            <li>RCP_DirtmoleStart</li>
         </startingResearchTags>
         <startingTechprintsResearchTags>
-            <li>CorePlus_DirtmoleStart</li>
+            <li>RCP_DirtmoleStart</li>
         </startingTechprintsResearchTags>
         <apparelStuffFilter>
             <thingDefs>

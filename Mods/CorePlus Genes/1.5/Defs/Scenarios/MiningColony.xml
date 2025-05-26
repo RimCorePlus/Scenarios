@@ -1,13 +1,13 @@
 <Defs>
     <ScenarioDef>
-        <defName>CorePlus_MiningColony</defName>
+        <defName>RCP_MiningColony</defName>
         <label>Dirtmole Mining Team</label>
         <description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.\n\nNote: This is nearly identical to the classic "Crashlanded" scenario, with adjustments to account for nearsighted starting pawns. This player faction is industrial, but does not start with electricity.</description>
         <scenario>
             <summary>Three dirtmole miners.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
-                <factionDef>CorePlus_DirtmoleColony</factionDef>
+                <factionDef>RCP_DirtmoleColony</factionDef>
             </playerFaction>
             <parts>
                 <!--starting pawns-->

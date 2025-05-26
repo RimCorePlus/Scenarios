@@ -1,5 +1,5 @@
 ﻿<ModMetaData>
-	<packageId>coreplus.scenarios</packageId>
+	<packageId>RCP.Scenarios</packageId>
 	<name>[RCP] Scenarios</name>
 	<author>boomer</author>
 	<supportedVersions>
@@ -8,7 +8,7 @@
 	<url>https://github.com/RimCorePlus/Scenarios</url>
 	<loadAfter>
 		<li>ceteam.combatextended</li>
-		<li>coreplus.genes.dirtmole</li>
+		<li>RCP.Genes.Dirtmole</li>
 		<li>dubwise.dubsbadhygiene</li>
 	</loadAfter>
 </ModMetaData>
